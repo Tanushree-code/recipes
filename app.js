@@ -5,4 +5,6 @@ window.addEventListener('scroll', () =>{
     let ss = window.pageYOffset;
     scrollBar.style.backgroundPositionY =  ss * -0.2 + "px";
     }
-})
+});
+
+

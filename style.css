@@ -16,6 +16,23 @@ section {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+  transition: all 0.6 s;
+  transition-delay: 0.01s;
+}
+.menu{
+  cursor: pointer;
+}
+.side-menu {
+  visibility: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  left: 0;
+  transform: translateX(-300px);
+  background-color: black;
+  z-index: 1000;
+  transition: all 0.5s;
 }
 .header {
   display: flex;
@@ -42,12 +59,8 @@ section {
   color: #fff;
   font-family: 'Playfair Display', serif !important;
   margin: 80px 106px 0;
-}
-.para {
-  font-size: 1rem;
-  width: 60%;
+}.para{
   color: #fff;
-  line-height: 30px;
 }
 .path{
     margin-top: 2.75rem;
@@ -102,6 +115,7 @@ width: 100%;
 }
 .box_container .box .p2{
   margin: 10px 0 0;
+  font-size: 1rem;
   width: 500px;
   text-align:center;
   line-height: 1.75rem;
@@ -117,43 +131,116 @@ width: 100%;
   justify-content: flex-end;
 }
 .flex-cont{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex: 0.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 15px;
+    flex: 0.5;
 }
 .flex{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
-    padding: 30px;
-    width: 130px;
+    background: linear-gradient(rgba(1,1,1,0.5), rgba(1,1,1,0.5));
+    padding: 20px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
 }
 .flex h1{
-    color: #fff;
     font-size: 1rem;
+    text-align: center;
     font-weight: 300;
+}
+.fourth_temp{
+  background-color: #fff;
+  display: flex;
+  color: #111111;
+}
+.temp-four{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 80px;
+}
+.fourth-t{
+  width: 300px;
+  height: 330px;
+  padding: 0px 30px 30px 30px;
+  text-align: center;
+  background-color:#fff;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth-t img{
+  object-fit: cover;
+  width: 360px;
+  height: 360px;
+}
+.hover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourth-t .fourth-p{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin: 0 auto;
+}
+.fourth-t h1{
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 20px 0 0;
+  font-family: 'Playfair Display', serif !important;
+}
+.fourth-t p{
+  margin: 20px auto 0 0;
+}
+.fourth-t .name{
+  font-family: 'Open Sans', sans-serif;
+  border-style: none none solid;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  margin: 30px auto 0;
+  padding: 0;
 }
 @media (max-width: 600px) {
   .title {
     font-size: 2rem;
     margin: 40px 30px 0;
   }
+  .head h1{
+    font-size: 2rem;
+  }
   .para {
     font-size: 1rem;
     width: 340px;
   }
+  .box_container .box .p2{
+    font-size: 1rem;
+    width: 350px;
+  }
   .flexbox{
-    margin-top: 600px;
-  }.flex-cont{
-    flex: 1;
-}.flex{
-  padding: 30px 20px;
+    margin-top: 700px;
+  }
+  .flex-cont{
+    flex: 0.99;
+  }
+.fourth-t img{
+  object-fit: cover;
+  width: 300px;
+  height: 320px;
 }
+
  
 }
 @media (min-width: 601px) and (max-width: 1000px){
